@@ -17,7 +17,7 @@ body {
 }
 
 .hero {
-  margin: 30px 0;
+  margin: 66px 16px 30px;
   text-align: center;
 }
 
@@ -29,7 +29,8 @@ body {
 }
 
 .hero-logo {
-  width: 240px;
+  width: 360px;
+  height: 53px;
   margin: 0 auto 20px;
   display: block;
 }
