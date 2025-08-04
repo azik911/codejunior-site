@@ -1,97 +1,68 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CodeJunior</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <img src="logo.svg" alt="CodeJunior logo" class="logo">
-    <div class="sphere"> 
-        <img src="fig_circle.gif" alt="">
-    </div>
-    <h1 class="tagline">Детская школа программирования в <span class="accent">&lt;Сергиевом-Посаде/&gt;</span></h1>
-    <p class="subtagline">От первых строк кода сегодня — к собственным стартапам завтра.</p>
-  </header>
+  <div class="container">
+    <header class="header">
+      <img src="./public/logo.svg" alt="CodeJunior logo" class="logo" />
+      <p class="city">Детская школа программирования в <span>Сергиевом Посаде</span></p>
+    </header>
 
-  <section class="courses">
-    <h2>Выбери свой курс!</h2>
-    <div class="course-list-scroll">
-      <div class="course-card">
-        <img src="computer.png" alt="Компьютерная грамотность">
-        <h3>Компьютерная <span class="accent">грамотность</span></h3>
-        <p>7–12 лет<br>Основы компьютера и безопасность</p>
-        <a href="#" class="btn btn-purple">Выбрать программу</a>
-        <a href="kurs-kompyuternaya-gramotnost.html" class="btn-outline">Узнать подробнее</a>
-      </div>
-      <div class="course-card">
-        <img src="design.png" alt="Графический дизайн">
-        <h3>Графический <span class="accent-yellow">дизайн</span></h3>
-        <p>10–14 лет<br>Делаем постеры, стикеры, интерфейсы</p>
-        <a href="#" class="btn btn-yellow">Выбрать программу</a>
-        <a href="kurs-dizayn.html" class="btn-outline">Узнать подробнее</a>
-      </div>
-      <div class="course-card">
-        <img src="python.png" alt="Python">
-        <h3>Программирование на <span class="accent-green">Python</span></h3>
-        <p>10–14 лет<br>Изучаем Python и создаём игры, ботов и алгоритмы</p>
-        <a href="#" class="btn btn-gray">Выбрать программу</a>
-        <a href="kurs-python.html" class="btn-outline">Узнать подробнее</a>
-      </div>
-      <div class="course-card">
-        <img src="3d.png" alt="3D-моделирование">
-        <h3>Проектирование и <span class="accent-blue">3D-моделирование</span></h3>
-        <p>10–14 лет<br>Моделируем объекты в Tinkercad и Blender</p>
-        <a href="#" class="btn btn-blue">Выбрать программу</a>
-        <a href="kurs-3d.html" class="btn-outline">Узнать подробнее</a>
-      </div>
-      <div class="course-card">
-        <img src="ai.png" alt="Искусственный интеллект">
-        <h3>Искусственный интеллект</h3>
-        <p>14–18 лет<br>От понимания до создания собственного ИИ</p>
-        <a href="#" class="btn btn-beige">Выбрать программу</a>
-        <a href="kurs-ai.html" class="btn-outline">Узнать подробнее</a>
-      </div>
-    </div>
-  </section>
+    <section class="hero">
+      <img src="./public/hero.png" alt="3D Object" class="hero-image" />
+      <h2>Выбери свой курс:</h2>
+    </section>
 
-  <section class="form-help">
-    <h2>Нужна помощь в выборе ?</h2>
-    <p>Заполните форму и мы поможем с выбором</p>
-    <form action="https://t.me/your_bot" method="post">
-      <input type="text" name="name" placeholder="Ваше имя" required>
-      <input type="tel" name="phone" placeholder="+7(999)789-23-44" required>
-      <input type="text" name="course" placeholder="Курс (необязательно)">
-      <textarea name="comment" placeholder="Комментарий (необязательно)"></textarea>
-      <button type="submit" class="btn">Отправить</button>
-    </form>
-  </section>
+    <section class="courses">
+      <div class="course">
+        <img src="./public/computer.png" alt="Компьютерная грамотность" />
+        <button class="primary">Выбрать программу</button>
+        <button class="secondary">Узнать подробнее</button>
+      </div>
+      <!-- Другие курсы по аналогии -->
+    </section>
 
-  <section class="benefits">
-    <h2>Почему <span class="accent">CodeJunior</span>?</h2>
-    <div class="benefit-card">
-      <h3>Группы до 5 человек</h3>
-      <p>Проводим занятия в малых группах. Каждый ученик получает индивидуальное внимание и участвует в обсуждениях.</p>
-    </div>
-    <div class="benefit-card">
-      <h3>Опытные педагоги</h3>
-      <p>Преподаватели с опытом и хорошим подходом к детям.</p>
-    </div>
-    <div class="benefit-card">
-      <h3>Обратная связь и прогресс</h3>
-      <p>Регулярная оценка знаний и поддержка сильных сторон.</p>
-    </div>
-  </section>
+    <section class="form-section">
+      <h3>Нужна помощь в выборе ?</h3>
+      <p>Заполните форму и мы поможем с выбором</p>
+      <form>
+        <input type="text" placeholder="Ваше имя" required />
+        <input type="tel" placeholder="+7(999)789-23-44" required />
+        <input type="text" placeholder="Курс (необязательно)" />
+        <textarea placeholder="Комментарий (необязательно)"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
 
-  <section class="reviews">
-    <blockquote>
-      “Удобный формат занятий и разнообразные курсы позволяют каждому найти что-то по вкусу. Рекомендую всем, кто хочет прокачать навыки в АйТи!”
-    </blockquote>
-    <h3>Отзывы</h3>
-    <iframe src="https://yandex.ru/maps-reviews-widget/YOUR_ID" width="100%" height="300" frameborder="0"></iframe>
-  </section>
+    <section class="why">
+      <h3>Почему <span class="green">CodeJunior</span>?</h3>
+      <div class="advantage">
+        <h4>Группы до 5 человек</h4>
+        <p>Проводим занятия в малых группах. Каждый ученик получает индивидуальное внимание и участвует в обсуждениях.</p>
+      </div>
+      <div class="advantage">
+        <h4>Опытные педагоги</h4>
+        <p>Преподаватели с опытом и хорошим подходом к детям.</p>
+      </div>
+      <div class="advantage">
+        <h4>Обратная связь и прогресс</h4>
+        <p>Регулярная оценка знаний и поддержка сильных сторон.</p>
+      </div>
+    </section>
+
+    <section class="review">
+      <blockquote>
+        “Удобный формат занятий и разнообразные курсы позволяют каждому найти что-то по вкусу. Рекомендую всем, кто хочет прокачать навыки в АйТи!”
+      </blockquote>
+    </section>
+  </div>
 </body>
 </html>
