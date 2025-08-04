@@ -11,27 +11,27 @@ body {
 }
 
 .container {
-  max-width: 390px; /* iPhone 14 Pro width */
+  max-width: 390px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 16px;
 }
 
 .hero {
-  margin: 66px 16px 30px;
+  margin-top: 66px;
   text-align: center;
-}
-
-.hero-image {
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto 20px;
-  display: block;
 }
 
 .hero-logo {
   width: 360px;
   height: 53px;
   margin: 0 auto 20px;
+  display: block;
+}
+
+.hero-image {
+  width: 214px;
+  height: 214px;
+  margin: 0 auto 30px;
   display: block;
 }
 
@@ -50,6 +50,6 @@ body {
 .subtitle {
   font-size: 14px;
   color: #B3B3B3;
-  margin: 10px auto 20px;
+  margin: 10px auto 59px;
   max-width: 280px;
 }
