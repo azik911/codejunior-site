@@ -25,13 +25,13 @@ body {
 .hero-logo {
   width: 360px;
   height: 53px;
-  margin: 20px auto 20px;
+  margin: 10px auto 20px;
   display: block;
 }
 
 .hero-image {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto 50px;
   display: block;
 }
