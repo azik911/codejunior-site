@@ -3,75 +3,342 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CodeJunior</title>
+    <title>CodeJunior — детская школа программирования</title>
+
     <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="container">
-      <section class="hero">
-        <img src="/Group shado.svg" alt="CodeJunior logo" class="hero-logo" />
-        <img src="/fig_circle.gif" alt="3D Object" class="hero-image" />
-        <h1>
+    <div class="page">
+      <!-- HERO -->
+      <header class="hero">
+        <img
+          src="photo/logo.svg"
+          alt="CodeJunior"
+          class="hero-logo"
+        />
+
+        <img
+          src="photo/fig_circle.gif"
+          alt="Абстрактная сфера"
+          class="hero-sphere"
+        />
+
+        <h1 class="hero-title">
           Детская школа программирования в<br />
-          <span class="highlight">&lt;Сергиевом-Посаде/&gt;</span>
+          <span class="hero-title-accent">&lt;Сергиевом-Посаде/&gt;</span>
         </h1>
-        <p class="subtitle">
+
+        <p class="hero-subtitle">
           От первых строк кода сегодня — к собственным стартапам завтра.
         </p>
-      </section>
+      </header>
+
+      <!-- КУРСЫ -->
+      <main>
+        <section class="section section-courses">
+          <h2 class="section-title">Выбери свой курс!</h2>
+
+          <div class="courses">
+            <!-- Компьютерная грамотность -->
+            <article class="course-card course-card--purple">
+              <div class="course-card-inner">
+                <div class="course-card-text">
+                  <h3 class="course-title">
+                    Компьютерная<br />
+                    <span class="course-title-accent-purple">грамотность</span>
+                  </h3>
+                  <p class="course-age">7–12 лет</p>
+                  <p class="course-desc">
+                    Основы компьютера<br />
+                    и безопасности
+                  </p>
+                </div>
+
+                <img
+                  src="photo/computer.png"
+                  alt="Компьютерная грамотность"
+                  class="course-image"
+                />
+
+                <div class="course-buttons">
+                  <a href="#" class="btn btn-main btn-main--purple">
+                    Выбрать программу
+                  </a>
+                  <a href="#" class="btn btn-outline btn-outline--purple">
+                    Узнать подробнее
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Графический дизайн -->
+            <article class="course-card course-card--yellow">
+              <div class="course-card-inner">
+                <div class="course-card-text">
+                  <h3 class="course-title">
+                    Графический<br />
+                    <span class="course-title-accent-yellow">дизайн</span>
+                  </h3>
+                  <p class="course-age">10–14 лет</p>
+                  <p class="course-desc">
+                    Делаем постеры,<br />
+                    стикеры и интерфейсы
+                  </p>
+                </div>
+
+                <img
+                  src="photo/design.png"
+                  alt="Графический дизайн"
+                  class="course-image"
+                />
+
+                <div class="course-buttons">
+                  <a href="#" class="btn btn-main btn-main--yellow">
+                    Выбрать программу
+                  </a>
+                  <a href="#" class="btn btn-outline btn-outline--yellow">
+                    Узнать подробнее
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3D и Roblox / Tinkercad/Blender -->
+            <article class="course-card course-card--brown">
+              <div class="course-card-inner">
+                <div class="course-card-text">
+                  <h3 class="course-title">
+                    Мир<br />
+                    <span class="course-title-accent-brown">3D-графики</span>
+                  </h3>
+                  <p class="course-age">10–15 лет</p>
+                  <p class="course-desc">
+                    Моделирование в 3D,<br />
+                    Roblox и Blender
+                  </p>
+                </div>
+
+                <img
+                  src="photo/3d.png"
+                  alt="3D-графика"
+                  class="course-image"
+                />
+
+                <div class="course-buttons">
+                  <a href="#" class="btn btn-main btn-main--brown">
+                    Выбрать программу
+                  </a>
+                  <a href="#" class="btn btn-outline btn-outline--brown">
+                    Узнать подробнее
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Python / старшая группа -->
+            <article class="course-card course-card--blue">
+              <div class="course-card-inner">
+                <div class="course-card-text">
+                  <h3 class="course-title">
+                    Программирование<br />
+                    <span class="course-title-accent-blue">на&nbsp;Python</span>
+                  </h3>
+                  <p class="course-age">12–17 лет</p>
+                  <p class="course-desc">
+                    От первых программ<br />
+                    до собственных проектов
+                  </p>
+                </div>
+
+                <img
+                  src="photo/python.png"
+                  alt="Python"
+                  class="course-image"
+                />
+
+                <div class="course-buttons">
+                  <a href="#" class="btn btn-main btn-main--blue">
+                    Выбрать программу
+                  </a>
+                  <a href="#" class="btn btn-outline btn-outline--blue">
+                    Узнать подробнее
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Искусственный интеллект -->
+            <article class="course-card course-card--black">
+              <div class="course-card-inner">
+                <div class="course-card-text">
+                  <h3 class="course-title">
+                    Искусственный<br />
+                    <span class="course-title-accent-green">интеллект</span>
+                  </h3>
+                  <p class="course-age">14–18 лет</p>
+                  <p class="course-desc">
+                    От понимания<br />
+                    до собственного ИИ-проекта
+                  </p>
+                </div>
+
+                <img
+                  src="photo/ai.png"
+                  alt="Искусственный интеллект"
+                  class="course-image"
+                />
+
+                <div class="course-buttons">
+                  <a href="#" class="btn btn-main btn-main--green">
+                    Выбрать программу
+                  </a>
+                  <a href="#" class="btn btn-outline btn-outline--green">
+                    Узнать подробнее
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ФОРМА -->
+        <section class="section section-help">
+          <div class="help-card">
+            <h2 class="section-title section-title--left">
+              Нужна помощь в выборе?
+            </h2>
+            <p class="help-text">
+              Заполните форму, и мы поможем<br />
+              подобрать подходящий курс.
+            </p>
+
+            <form class="help-form">
+              <label class="field">
+                <span class="field-label">Ваше имя</span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                />
+              </label>
+
+              <label class="field">
+                <span class="field-label">Телефон</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+7 (999) 789-23-44"
+                />
+              </label>
+
+              <button type="submit" class="btn btn-main btn-main--green full-width">
+                Оставить заявку
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- ПОЧЕМУ CODEJUNIOR -->
+        <section class="section section-why">
+          <h2 class="section-title">Почему <span class="green">CodeJunior?</span></h2>
+
+          <div class="why-list">
+            <article class="why-card why-card--green">
+              <h3 class="why-title">Группы до 5 человек</h3>
+              <p class="why-text">
+                Занятия проходят в мини-группах. Каждый ребёнок
+                получает внимание преподавателя и участвует в обсуждениях.
+              </p>
+            </article>
+
+            <article class="why-card why-card--green">
+              <h3 class="why-title">Опытные педагоги</h3>
+              <p class="why-text">
+                Преподаватели — практикующие разработчики и дизайнеры.
+                Объясняем сложные вещи простым языком.
+              </p>
+            </article>
+
+            <article class="why-card why-card--green">
+              <h3 class="why-title">Обратная связь и прогресс</h3>
+              <p class="why-text">
+                Регулярно отправляем отчёты о занятиях, даём рекомендации
+                и помогаем детям справляться с трудностями.
+              </p>
+            </article>
+
+            <article class="why-card why-card--green">
+              <h3 class="why-title">Проекты в портфолио</h3>
+              <p class="why-text">
+                Каждый курс заканчивается личным проектом:
+                игра, сайт, 3D-сцена или дизайн-работа.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- ЦИТАТА + ОТЗЫВЫ -->
+        <section class="section section-review">
+          <p class="quote">
+            «Удобный формат занятий и разнообразные курсы позволяют каждому
+            найти что-то по своему вкусу. Рекомендую всем, кто хочет прокачать
+            свои навыки в IT».
+          </p>
+        
+          <div class="yandex-widget-wrapper">
+            <div
+              style="
+                width: 100%;
+                height: 500px;
+                overflow: hidden;
+                position: relative;
+              "
+            >
+              <iframe
+                style="
+                  width: 100%;
+                  height: 100%;
+                  border: 0;
+                  border-radius: 16px;
+                  box-sizing: border-box;
+                "
+                src="https://yandex.ru/maps-reviews-widget/87416436656?comments"
+              ></iframe>
+              <a
+                href="https://yandex.ru/maps/org/codejunior/87416436656/"
+                target="_blank"
+                style="
+                  box-sizing: border-box;
+                  text-decoration: none;
+                  color: #b3b3b3;
+                  font-size: 10px;
+                  font-family: YS Text, sans-serif;
+                  position: absolute;
+                  bottom: 8px;
+                  width: 100%;
+                  text-align: center;
+                  left: 0;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: block;
+                  max-height: 14px;
+                  white-space: nowrap;
+                  padding: 0 16px;
+                "
+              >
+                CodeJunior на карте Сергиева Посада — Яндекс Карты
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-
-    <section class="courses-section">
-      <h2 class="section-title">Выбери свой курс!</h2>
-      <div class="course-list">
-
-        <div class="course-card bg-purple">
-          <img src="/computer.png" alt="Компьютерная грамотность" />
-          <h3>Компьютерная<br /><span class="highlight">грамотность</span></h3>
-          <p>7–12 лет<br />Основы компьютера и безопасности</p>
-          <a href="#" class="btn btn-purple">Выбрать программу</a>
-          <a href="#" class="btn-outline">Узнать подробнее</a>
-        </div>
-
-        <div class="course-card bg-orange">
-          <img src="/design.png" alt="Графический дизайн" />
-          <h3>Графический<br /><span class="highlight-yellow">дизайн</span></h3>
-          <p>10–14 лет<br />Делаем постеры, стикеры, интерфейсы</p>
-          <a href="#" class="btn btn-yellow">Выбрать программу</a>
-          <a href="#" class="btn-outline">Узнать подробнее</a>
-        </div>
-
-        <div class="course-card bg-light">
-          <img src="/python.png" alt="Программирование на Python" />
-          <h3>Программирование на<br /><span class="highlight-green">Python</span></h3>
-          <p>10–14 лет<br />Изучаем Python и создаём игры, ботов и алгоритмы</p>
-          <a href="#" class="btn btn-green">Выбрать программу</a>
-          <a href="#" class="btn-outline">Узнать подробнее</a>
-        </div>
-
-        <div class="course-card bg-blue">
-          <img src="/3d.png" alt="3D-моделирование" />
-          <h3>Проектирование и<br />3D-моделирование</h3>
-          <p>10–14 лет<br />Моделируем объекты в Tinkercad и Blender</p>
-          <a href="#" class="btn btn-blue">Выбрать программу</a>
-          <a href="#" class="btn-outline">Узнать подробнее</a>
-        </div>
-
-        <div class="course-card bg-beige gradient-animated">
-          <img src="/ai.png" alt="Искусственный интеллект" />
-          <h3>Искусственный<br />интеллект</h3>
-          <p>14–18 лет<br />От понимания до создания собственного ИИ</p>
-          <a href="#" class="btn btn-beige">Выбрать программу</a>
-          <a href="#" class="btn-outline">Узнать подробнее</a>
-        </div>
-
-      </div>
-    </section>
   </body>
 </html>
